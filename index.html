@@ -18,12 +18,12 @@
 
   <body>
     <header>
-      <div class="container-space">
-        <nav class="container-logo main-nav">
+      <div class="container heder">
+        <nav class="header-logo">
           <a href="./index.html" class="logo">
             <span class="logo-link">Web</span>Studio
           </a>
-          <ul class="list site-nav">
+          <ul class="list site-focus">
             <li class="item">
               <a href="./index.html" class="link current">Студія</a>
             </li>
@@ -34,15 +34,21 @@
           </ul>
         </nav>
 
-        <ul class="list site-nav">
+        <ul class="list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="site-contacts"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="header-contacts">
+              <svg class="mail" width="16px" height="10px">
+                <use href="./images/symbol-defs-good.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="site-contacts"
-              >+38 096 111 11 11</a
+            <a href="tel:+380961111111" class="header-contacts"
+              ><svg class="telephone" width="10px" height="16px">
+                <use href="./images/symbol-defs-good.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -51,38 +57,63 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero-title">
-          Ефективні рішення для <br />
-          вашого бізнесу
-        </h1>
-        <button type="button" class="button-primary">Замовити послугу</button>
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button-primary">Замовити послугу</button>
+        </div>
       </section>
 
-      <section class="features">
-        <div class="section-studio">
+      <section class="section-features">
+        <div class="container">
           <ul class="list">
             <li class="list-features">
-              <h3 class="section-title">увага до деталей</h3>
+              <div class="feature-icon">
+                <svg class="icon-antenna" width="70px" height="70px">
+                  <use
+                    href="./images/symbol-defs-good.svg#icon-antenna-1"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="features-title">увага до деталей</h3>
               <p>
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="list-features">
-              <h3 class="section-title">пунктуальність</h3>
+            <li class="list-features icon-clock">
+              <div class="feature-icon">
+                <svg class="icon-antenna" width="70px" height="70px">
+                  <use href="./images/symbol-defs-good.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="features-title">пунктуальність</h3>
               <p>
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="list-features">
-              <h3 class="section-title">планування</h3>
+            <li class="list-features icon-diagram">
+              <div class="feature-icon">
+                <svg class="icon-antenna" width="70px" height="70px">
+                  <use
+                    href="./images/symbol-defs-good.svg#icon-diagram-1"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="features-title">планування</h3>
               <p>
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="list-features">
-              <h3 class="section-title">сучасні технології</h3>
+            <li class="list-features icon-astronaut">
+              <div class="feature-icon">
+                <svg class="icon-antenna" width="70px" height="70px">
+                  <use
+                    href="./images/symbol-defs-good.svg#icon-astronaut-1"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="features-title">сучасні технології</h3>
               <p>
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -92,11 +123,11 @@
         </div>
       </section>
 
-      <section class="feature-list">
-        <h2 class="title-feature">Чим ми займаємося</h2>
-        <div class="feature-img">
+      <section class="section-hoby">
+        <h2 class="hoby-title">Чим ми займаємося</h2>
+        <div class="container hoby-img">
           <ul class="list">
-            <li class="hobby-list">
+            <li class="hoby-list">
               <img
                 src="./images/tablet1.jpg"
                 alt="Пк програмування"
@@ -104,7 +135,7 @@
                 height="294"
               />
             </li>
-            <li class="hobby-list">
+            <li class="hoby-list">
               <img
                 src="./images/tablet.jpg"
                 alt="Мобільний телефон"
@@ -112,7 +143,7 @@
                 height="294"
               />
             </li>
-            <li class="hobby-list">
+            <li class="hoby-list">
               <img
                 src="./images/telephone.jpg"
                 alt="Планшет"
@@ -125,8 +156,8 @@
       </section>
 
       <section class="section-team">
-        <h2 class="title">Наша команда</h2>
-        <div class="team-img">
+        <h2 class="title">На ша команда</h2>
+        <div class="container team-img">
           <ul class="team-list">
             <li class="li-color">
               <img
@@ -135,8 +166,14 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Ігор Дем'яненко</h3>
-              <p>Product Designer</p>
+              <div class="team-container">
+                <h3 class="team-title">Ігор Дем'яненко</h3>
+                <p>Product Designer</p>
+                <a href="#" class="instagram"></a>
+                <a href="#" class="twiter"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="in"></a>
+              </div>
             </li>
             <li class="li-color">
               <img
@@ -145,8 +182,14 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Ольга Рєпіна</h3>
-              <p>Frontend Developer</p>
+              <div class="team-container">
+                <h3 class="team-title">Ольга Рєпіна</h3>
+                <p>Frontend Developer</p>
+                <a href="#" class="instagram"></a>
+                <a href="#" class="twiter"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="in"></a>
+              </div>
             </li>
             <li class="li-color">
               <img
@@ -155,8 +198,14 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Микола Тарасов</h3>
-              <p>Marketing</p>
+              <div class="team-container">
+                <h3 class="team-title">Микола Тарасов</h3>
+                <p>Marketing</p>
+                <a href="#" class="instagram"></a>
+                <a href="#" class="twiter"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="in"></a>
+              </div>
             </li>
             <li class="li-color">
               <img
@@ -165,8 +214,55 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Михайло Єрмаков</h3>
-              <p>UI Designer</p>
+              <div class="team-container">
+                <h3 class="team-title">Михайло Єрмаков</h3>
+                <p>UI Designer</p>
+                <ul>
+                  <li><a href="#" class="instagram"></a></li>
+                  <li><a href="#" class="twiter"></a></li>
+                  <li><a href="#" class="facebook"></a></li>
+                  <li><a href="#" class="in"></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="customers">
+        <h2 class="title">Постійні клієнти</h2>
+
+        <div class="container">
+          <ul class="customers-list">
+            <li class="customers-li">
+              <svg class="customers-icon">
+                <use href="./images/symbol-defs.svg#icon-group"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg class="customers-icon">
+                <use href="./images/symbol-defs.svg#icon-group-1"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg class="customers-icon">
+                <use href="./images/symbol-defs.svg#icon-group-2"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg class="customers-icon">
+                <use href="./images/symbol-defs.svg#icon-group-3"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg class="customers-icon">
+                <use href="./images/symbol-defs.svg#icon-group-4"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg class="customers-icon">
+                <use href="./images/symbol-defs.svg#icon-group-5"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -174,13 +270,12 @@
     </main>
 
     <footer class="footer-background">
-      <div class="footer-styles">
-        <div>
-          <a href="./index.html" class="footer-logo">
-            <span class="logo-link">Web</span>Studio
-          </a>
-        </div>
-        <address>
+      <div class="container footer-styles">
+        <a href="./index.html" class="footer-logo">
+          <span class="logo-link">Web</span>Studio
+        </a>
+
+        <address class="adres-footer">
           <ul class="list-footer">
             <li class="footer-li">
               <a
