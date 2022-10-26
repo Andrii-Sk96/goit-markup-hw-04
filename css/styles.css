@@ -262,7 +262,7 @@ header {
 
 .li-color {
   width: 270px;
-  height: 368px;
+  height: 428px;
   padding: 0px 0px 108px 0px;
 
   background-color: var(--primery-white-color);
@@ -353,6 +353,38 @@ header {
   color: var(--title-text-color);
 }
 
+.team-text {
+  margin-bottom: 16px;
+}
+
+.link-soc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: #afb1b8;
+}
+.team-container .link-soc + .link-soc {
+  margin-left: 10px;
+}
+
+.link-soc:hover,
+.link-soc:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+.soc-team {
+  fill: currentColor;
+}
+
+.team-container .social + .social {
+  margin-left: 10px;
+}
 /*footer*/
 
 .footer-background .list {
@@ -404,7 +436,9 @@ header {
 }
 
 .footer-styles {
+  width: 231px;
   display: flex;
+
   flex-direction: column;
 }
 
@@ -419,6 +453,74 @@ header {
 
 .footer-li {
   font-style: normal;
+}
+
+.footer-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  height: 16px;
+
+  text-transform: uppercase;
+
+  color: var(--primery-white-color);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-svg {
+  fill: var(--primery-white-color);
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.footer-display {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.div-social {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  margin-left: 70px;
+}
+
+.container-fooder {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 70px;
+}
+
+.social-list .social + .social {
+  margin-left: 10px;
 }
 /*focus-hover*/
 
@@ -563,59 +665,16 @@ header {
   margin-right: 0;
 }
 
-.instagram {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background-image: url(../images/instagram\ 2.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.twiter {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background-image: url(../images/twitter\ 1.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.facebook {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background-image: url(../images/Vector.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.in {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background-image: url(../images/linkedin\ 1.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/*КОНТАКТИ*/
-
+/*customers*/
 .customers-list {
+  color: #afb1b8;
   display: flex;
   list-style: none;
 }
 
-.customers-icon {
-  width: 106px;
-  height: 60px;
-}
-
 .customers-li {
+  fill: #afb1b8;
+
   display: flex;
   width: 170px;
   height: 92px;
@@ -624,6 +683,17 @@ header {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.customers-li:hover,
+.customers-li:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.customers-icon {
+  fill: currentColor;
 }
 
 .customers-list .customers-li + .customers-li {
