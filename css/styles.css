@@ -169,7 +169,12 @@ header {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   /*background-size: contain;*/
@@ -332,6 +337,13 @@ header {
   color: var(--primary-text-color);
 }
 
+.team-list-link {
+  display: flex;
+
+  list-style: none;
+  justify-content: center;
+}
+
 .title {
   margin-bottom: 50px;
 
@@ -368,7 +380,7 @@ header {
 
   color: #afb1b8;
 }
-.team-container .link-soc + .link-soc {
+.team-container .team-soc-link + .team-soc-link {
   margin-left: 10px;
 }
 
@@ -436,7 +448,6 @@ header {
 }
 
 .footer-styles {
-  width: 231px;
   display: flex;
 
   flex-direction: column;
@@ -502,6 +513,7 @@ header {
 .footer-display {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
 
 .div-social {
@@ -643,7 +655,6 @@ header {
 }
 
 .portfolio-item:hover {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -675,13 +686,18 @@ header {
 
 /*customers*/
 .customers-list {
-  color: #afb1b8;
   display: flex;
   list-style: none;
 }
 
-.customers-li {
-  fill: #afb1b8;
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.customers-link {
+  color: #afb1b8;
 
   display: flex;
   width: 170px;
@@ -694,9 +710,8 @@ header {
   cursor: pointer;
 }
 
-.customers-li:hover,
-.customers-li:focus {
-  border-color: var(--accent-color);
+.customers-icon:hover,
+.customers-icon:focus {
   color: var(--accent-color);
 }
 
